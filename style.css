@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@600&family=Raleway&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("number.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 65vh;
+    font-family: 'Playfair', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 2rem;
+}
+h1{
+    text-align: center;
+    color:rgb(245, 45, 241);
+    font-size: 2.6rem;
+}
+input[type="text"]
+{
+    width:25vw;
+    height:5vh;
+    border:none;
+    outline: none;
+    padding-left: 1rem;
+    font-family: 'Playfair', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    border-radius: 2rem;
+
+}
+button,input[type="text"],h1,p{
+    margin:1rem;
+}
+button{
+    width:5rem;
+    height:3rem;
+    border: none;
+    border-radius: 2rem;
+    font-family: cursive;
+    font-size: 1.5rem;
+    background-color: blue;
+    color:white;
+
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button:hover{
+    background-color: rgb(158, 158, 237);
+    color: black;
+    cursor: pointer;
+}
+p{
+    font-family: cursive;
+    font-size: 2rem;
+    color:rgb(231, 247, 9);
+    text-align: center;
+}
+@media (max-width:506px) {
+    .container,body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1,p{
+        font-size: clamp(0.8rem,1.5rem,2rem);
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+    }
+    input[type="text"]
+    {
+        padding-left: clamp(0.1rem,0.4rem,0.5rem);
+        font-size: clamp(0.5rem,0.7rem,1rem);
+    }
+
+    
+}
